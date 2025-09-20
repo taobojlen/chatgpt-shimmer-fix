@@ -18,7 +18,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "shimmer-fix@btao.org",
-      "strict_min_version": "142.0"
+      "strict_min_version": "109.0"
     }
   }
 }
