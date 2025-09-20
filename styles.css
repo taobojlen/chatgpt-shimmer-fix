@@ -1,0 +1,23 @@
+/* Additive fix: override only in non-WebKit browsers */
+.loading-shimmer,
+.loading-shimmer-pure-text {
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: loading-shimmer;
+  background: var(--text-secondary)
+    linear-gradient(
+      to right,
+      var(--text-secondary) 0,
+      var(--shimmer-contrast) 40%,
+      var(--shimmer-contrast) 60%,
+      var(--text-secondary) 100%
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 50% 200%;
+  display: inline-block;
+}
